@@ -1,0 +1,56 @@
+# ------ root_path/dataset_name ------
+root_path: ''
+
+
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+# load_cache: True
+# load_pre_feat: True
+
+
+# ------ Hyperparamters ------
+search_hp: True
+# search_hp: False
+
+search_scale: [30, 30]
+search_step: [200, 20]
+
+init_beta: 1
+init_alpha: 5
+
+
+# ------ Basic Config ------
+dataset: 'aircraft'
+shots: 5
+backbone: 'model/longclip-B.pt'
+
+lr: 0.001
+augment_epoch: 10
+train_epoch: 20
+opt: 'sgd'
+gamma: 0.1
+epoch: 400
+stage: 3
+val_epoch: 20 
+weight_decay: 0.0005
+nesterov: True
+train_way: 10 
+train_shot: 5 
+train_transform_type: 0
+test_transform_type: 0
+test_way: 5
+test_shot: [1]
+pre: True
+resnet: True
+gpu: 0
+# ==default==========
+no_val: False
+train_query_shot: 15
+test_query_shot: 16
+val_trial: 1000
+seed: 42
+detailed_name: False
+decay_epoch: None
+epoch: 400
