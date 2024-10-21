@@ -1,0 +1,1 @@
+Put predicted images into the jpg folder
